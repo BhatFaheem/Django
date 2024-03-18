@@ -1,6 +1,5 @@
 {% extends 'main.html' %} {% block content %}
-<h1>Single Project Templates</h1>
-<hr />
+<img style="max-width: 500px" src="{{ project.featured_image.url}}" alt="" />
 <h1>{{project.title}}</h1>
 <hr />
 {% for tag in project.tags.all %}
