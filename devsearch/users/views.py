@@ -15,4 +15,5 @@ def userProfile(request, pk):
     topSkills = profile.skill_set.exclude(description__exact="")
     otherSkills = profile.skill_set.filter(description="")
     context = {"profile": profile, "topSkills": topSkills, "otherSkills": otherSkills}
+    # Hello World
     return render(request, "users/user-profile.html", context)
