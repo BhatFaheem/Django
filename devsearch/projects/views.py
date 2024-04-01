@@ -31,7 +31,7 @@ def project(request, key):
         review.save()
         projectObj.getVoteCount
         messages.success(request, "Your review was successfully submitted")
-        return redirect("project", pk=projectObj.id)
+        return redirect("project", key=projectObj.id)
 
     # tags = projectObj.tags.all()
     return render(
