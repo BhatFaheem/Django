@@ -50,6 +50,7 @@ const buildProjects = (projects) => {
         `
         projectsWrapper.innerHTML += projectCard
     }
+    // Here we add a event Listener
     addVoteEvents();
 }
 
